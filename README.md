@@ -13,5 +13,5 @@ Change the title to include the search query like google does.
     * [Firefox Nightly](https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly)
     * [Firefox Extended Support Release (ESR)](https://www.mozilla.org/en-US/firefox/enterprise/)
 2. Go to about:config and set xpinstall.signatures.required to false
-3. Go to [ldev.eu.org/firefox/startpage_fix](ldev.eu.org/firefox/startpage_fix)
+3. Go to [https://ldev.eu.org/firefox/startpage_fix](https://ldev.eu.org/firefox/startpage_fix)
 4. Go to [https://startpage.com](https://startpage.com) and click the extension icon to enable the extension.

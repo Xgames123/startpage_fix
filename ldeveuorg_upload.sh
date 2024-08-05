@@ -3,7 +3,7 @@
 # Usage: ldeveuorg_upload.sh <session_token> [-d|--debug]
 
 TOKEN_GET_URL="https://ldev.eu.org/sestoken"
-PROJECT_NAME="darksands_theme"
+PROJECT_NAME="startpage_fix"
 
 domain="https://ldev.eu.org"
 if [ "$2" = "-d" ] | [ "$2" = "--debug" ] ; then
@@ -33,4 +33,4 @@ ver=$(ls web-ext-artifacts | rg "$PROJECT_NAME-([0-9]*.[0-9]*.[0-9]*).zip" -r '$
 
 echo "version: $ver"
 echo "Uploading..."
-curl --data-binary @web-ext-artifacts/$PROJECT_NAME\_-$ver.zip -H "Cookie:session=$ses_token" "$domain/firefox/$PROJECT_NAME?v=$ver"
+curl --data-binary @web-ext-artifacts/$PROJECT_NAME-$ver.zip -H "Cookie:session=$ses_token" "$domain/firefox/$PROJECT_NAME?v=$ver"
