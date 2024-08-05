@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Startpage Fix",
+	"version": "1.0.0",
+	"description": "Fix the title of the startpage search engine",
+	"homepage_url": "https://github.com/Xgames123/startpage_fix",
+	"content_scripts": [
+		{
+			"matches": [
+				"*://www.startpage.com/sp/search"
+			],
+			"js": [
+				"title_fix.js"
+			]
+		}
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "startpage@ldev",
+			"update_url": "https://ldev.eu.org/firefox/updates.json"
+		}
+	}
+}
